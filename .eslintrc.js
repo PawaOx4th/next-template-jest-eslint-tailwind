@@ -25,18 +25,18 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['*.ts', '*.tsx'], // Your TypeScript files extension
+      files: ["*.ts", "*.tsx"], // Your TypeScript files extension
 
       // As mentioned in the comments, you should extend TypeScript plugins here,
       // instead of extending them outside the `overrides`.
       // If you don't want to extend any rules, you don't need an `extends` attribute.
       extends: [
-        'plugin:@typescript-eslint/recommended',
-        'plugin:@typescript-eslint/recommended-requiring-type-checking',
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking",
       ],
 
       parserOptions: {
-        project: ['./tsconfig.json'], // Specify it only for TypeScript files
+        project: ["./tsconfig.json"], // Specify it only for TypeScript files
       },
     },
   ],
@@ -73,10 +73,13 @@ module.exports = {
     ],
     "@typescript-eslint/no-floating-promises": "off",
     "jest/expect-expect": "off",
-    "no-unused-vars": ["warn", {
-      "args": "after-used",
-      "ignoreRestSiblings": false,
-      "argsIgnorePattern": "^_"
-    }]
+    "no-unused-vars": [
+      "warn",
+      {
+        args: "after-used",
+        ignoreRestSiblings: false,
+        argsIgnorePattern: "^_",
+      },
+    ],
   },
 };

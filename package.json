@@ -9,6 +9,7 @@
     "lint": "next lint",
     "test": "jest",
     "t": "jest",
+    "format": "prettier --write .",
     "prepare": "husky install",
     "lint-staged": "lint-staged"
   },
